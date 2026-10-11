@@ -1,0 +1,101 @@
+brand,model,variant,price,fuel_type,transmission,mileage,engine,seating_capacity,body_type
+Maruti,Alto K10,STD,420000,Petrol,Manual,24.4,998cc,5,Hatchback
+Maruti,Alto K10,VXi,520000,Petrol,Automatic,23.9,998cc,5,Hatchback
+Maruti,S-Presso,STD,400000,Petrol,Manual,24.1,998cc,5,Hatchback
+Maruti,S-Presso,VXi,500000,Petrol,Automatic,23.6,998cc,5,Hatchback
+Maruti,Celerio,LXi,520000,Petrol,Manual,25.2,998cc,5,Hatchback
+Maruti,Celerio,ZXi,640000,Petrol,Automatic,24.7,998cc,5,Hatchback
+Maruti,Wagon R,LXi,550000,Petrol,Manual,24.3,1197cc,5,Hatchback
+Maruti,Wagon R,ZXi,680000,Petrol,Automatic,23.8,1197cc,5,Hatchback
+Maruti,Swift,LXi,650000,Petrol,Manual,24.8,1197cc,5,Hatchback
+Maruti,Swift,ZXi,800000,Petrol,Automatic,24.3,1197cc,5,Hatchback
+Maruti,Baleno,Sigma,700000,Petrol,Manual,22.3,1197cc,5,Hatchback
+Maruti,Baleno,Alpha,860000,Petrol,Automatic,21.8,1197cc,5,Hatchback
+Maruti,Dzire,LXi,720000,Petrol,Manual,24.8,1197cc,5,Sedan
+Maruti,Dzire,ZXi,890000,Petrol,Automatic,24.3,1197cc,5,Sedan
+Maruti,Fronx,Sigma,760000,Petrol,Manual,21.8,1197cc,5,SUV
+Maruti,Fronx,Delta+,940000,Petrol,Automatic,21.3,1197cc,5,SUV
+Maruti,Brezza,LXi,900000,Petrol,Manual,19.8,1462cc,5,SUV
+Maruti,Brezza,ZXi,1110000,Petrol,Automatic,19.3,1462cc,5,SUV
+Maruti,Grand Vitara,Sigma,1150000,Hybrid,Manual,21.1,1462cc,5,SUV
+Maruti,Grand Vitara,Alpha,1420000,Hybrid,Automatic,20.6,1462cc,5,SUV
+Maruti,Ertiga,LXi,930000,Petrol,Manual,20.5,1462cc,7,MPV
+Maruti,Ertiga,ZXi,1150000,Petrol,Automatic,20.0,1462cc,7,MPV
+Maruti,XL6,Zeta,1200000,Petrol,Manual,20.2,1462cc,6,MPV
+Maruti,XL6,Alpha,1480000,Petrol,Automatic,19.7,1462cc,6,MPV
+Hyundai,Grand i10 Nios,Era,600000,Petrol,Manual,18.0,1197cc,5,Hatchback
+Hyundai,Grand i10 Nios,Asta,740000,Petrol,Automatic,17.5,1197cc,5,Hatchback
+Hyundai,i20,Magna,700000,Petrol,Manual,20.3,1197cc,5,Hatchback
+Hyundai,i20,Asta,860000,Petrol,Automatic,19.8,1197cc,5,Hatchback
+Hyundai,Exter,EX,650000,Petrol,Manual,19.2,1197cc,5,SUV
+Hyundai,Exter,SX,800000,Petrol,Automatic,18.7,1197cc,5,SUV
+Hyundai,Venue,E,820000,Petrol,Manual,18.5,1197cc,5,SUV
+Hyundai,Venue,SX,1010000,Petrol,Automatic,18.0,1197cc,5,SUV
+Hyundai,Creta,E,1150000,Petrol,Manual,17.4,1497cc,5,SUV
+Hyundai,Creta,SX(O),1420000,Petrol,Automatic,16.9,1497cc,5,SUV
+Hyundai,Verna,EX,1150000,Petrol,Manual,18.6,1497cc,5,Sedan
+Hyundai,Verna,SX(O),1420000,Petrol,Automatic,18.1,1497cc,5,Sedan
+Hyundai,Alcazar,Executive,1550000,Diesel,Manual,18.1,1493cc,7,SUV
+Hyundai,Alcazar,Signature,1920000,Diesel,Automatic,17.6,1493cc,7,SUV
+Hyundai,Tucson,Platinum,2850000,Diesel,Manual,16.4,1997cc,5,SUV
+Hyundai,Tucson,Signature,3350000,Diesel,Automatic,15.9,1997cc,5,SUV
+Tata,Tiago,XE,500000,Petrol,Manual,19.0,1199cc,5,Hatchback
+Tata,Tiago,XZ+,620000,Petrol,Automatic,18.5,1199cc,5,Hatchback
+Tata,Tigor,XE,600000,Petrol,Manual,19.3,1199cc,5,Sedan
+Tata,Tigor,XZ+,740000,Petrol,Automatic,18.8,1199cc,5,Sedan
+Tata,Altroz,Smart,680000,Petrol,Manual,19.3,1199cc,5,Hatchback
+Tata,Altroz,Accomplished,840000,Petrol,Automatic,18.8,1199cc,5,Hatchback
+Tata,Punch,Pure,620000,Petrol,Manual,20.1,1199cc,5,SUV
+Tata,Punch,Creative,760000,Petrol,Automatic,19.6,1199cc,5,SUV
+Tata,Nexon,Smart,800000,Petrol,Manual,17.4,1199cc,5,SUV
+Tata,Nexon,Fearless,990000,Petrol,Automatic,16.9,1199cc,5,SUV
+Tata,Curvv,Smart,1050000,Petrol,Manual,17.5,1199cc,5,SUV
+Tata,Curvv,Accomplished,1300000,Petrol,Automatic,17.0,1199cc,5,SUV
+Tata,Harrier,Smart,1550000,Diesel,Manual,16.8,1956cc,5,SUV
+Tata,Harrier,Fearless,1920000,Diesel,Automatic,16.3,1956cc,5,SUV
+Tata,Safari,Smart,1650000,Diesel,Manual,16.3,1956cc,7,SUV
+Tata,Safari,Accomplished,2040000,Diesel,Automatic,15.8,1956cc,7,SUV
+Mahindra,XUV 3XO,MX1,800000,Petrol,Manual,18.9,1197cc,5,SUV
+Mahindra,XUV 3XO,AX7,990000,Petrol,Automatic,18.4,1197cc,5,SUV
+Mahindra,Bolero,B4,900000,Diesel,Manual,16.0,1493cc,7,SUV
+Mahindra,Bolero,B6,1110000,Diesel,Automatic,15.5,1493cc,7,SUV
+Mahindra,Bolero Neo,N4,950000,Diesel,Manual,17.3,1493cc,7,SUV
+Mahindra,Bolero Neo,N10,1170000,Diesel,Automatic,16.8,1493cc,7,SUV
+Mahindra,Thar,AX(O),1150000,Diesel,Manual,15.2,1497cc,4,SUV
+Mahindra,Thar,LX,1420000,Diesel,Automatic,14.7,1497cc,4,SUV
+Mahindra,Scorpio N,Z2,1450000,Diesel,Manual,15.4,2184cc,7,SUV
+Mahindra,Scorpio N,Z8,1790000,Diesel,Automatic,14.9,2184cc,7,SUV
+Mahindra,XUV 7XO,MX,1500000,Diesel,Manual,16.6,2184cc,7,SUV
+Mahindra,XUV 7XO,AX7,1860000,Diesel,Automatic,16.1,2184cc,7,SUV
+Kia,Sonet,HTE,850000,Petrol,Manual,18.4,1197cc,5,SUV
+Kia,Sonet,HTX,1050000,Petrol,Automatic,17.9,1197cc,5,SUV
+Kia,Seltos,HTE,1150000,Petrol,Manual,17.9,1497cc,5,SUV
+Kia,Seltos,HTX,1420000,Petrol,Automatic,17.4,1497cc,5,SUV
+Kia,Carens,Premium,1200000,Petrol,Manual,16.5,1497cc,7,MPV
+Kia,Carens,Luxury,1480000,Petrol,Automatic,16.0,1497cc,7,MPV
+Honda,Amaze,V,760000,Petrol,Manual,18.6,1199cc,5,Sedan
+Honda,Amaze,VX,940000,Petrol,Automatic,18.1,1199cc,5,Sedan
+Honda,City,SV,1250000,Petrol,Manual,18.4,1498cc,5,Sedan
+Honda,City,ZX,1550000,Petrol,Automatic,17.9,1498cc,5,Sedan
+Honda,Elevate,SV,1200000,Petrol,Manual,16.9,1498cc,5,SUV
+Honda,Elevate,ZX,1480000,Petrol,Automatic,16.4,1498cc,5,SUV
+Toyota,Glanza,E,720000,Petrol,Manual,22.3,1197cc,5,Hatchback
+Toyota,Glanza,V,890000,Petrol,Automatic,21.8,1197cc,5,Hatchback
+Toyota,Urban Cruiser Hyryder,E,1150000,Hybrid,Manual,21.1,1462cc,5,SUV
+Toyota,Urban Cruiser Hyryder,V,1420000,Hybrid,Automatic,20.6,1462cc,5,SUV
+Toyota,Innova Hycross,GX,1950000,Hybrid,Manual,21.1,1987cc,7,MPV
+Toyota,Innova Hycross,ZX,2410000,Hybrid,Automatic,20.6,1987cc,7,MPV
+Toyota,Fortuner,4x2,3600000,Diesel,Manual,14.2,2755cc,7,SUV
+Toyota,Fortuner,Legender,4100000,Diesel,Automatic,13.7,2755cc,7,SUV
+Renault,Kwid,RXE,450000,Petrol,Manual,21.5,999cc,5,Hatchback
+Renault,Kwid,RXT,550000,Petrol,Automatic,21.0,999cc,5,Hatchback
+Renault,Triber,RXE,620000,Petrol,Manual,19.0,999cc,7,MPV
+Renault,Triber,RXZ,760000,Petrol,Automatic,18.5,999cc,7,MPV
+Renault,Kiger,RXE,650000,Petrol,Manual,20.5,999cc,5,SUV
+Renault,Kiger,RXZ,800000,Petrol,Automatic,20.0,999cc,5,SUV
+Nissan,Magnite,Visia,650000,Petrol,Manual,20.0,999cc,5,SUV
+Nissan,Magnite,Tekna,800000,Petrol,Automatic,19.5,999cc,5,SUV
+Skoda,Slavia,Classic,1000000,Petrol,Manual,19.4,999cc,5,Sedan
+Skoda,Slavia,Prestige,1240000,Petrol,Automatic,18.9,999cc,5,Sedan
+Volkswagen,Virtus,Comfortline,1150000,Petrol,Manual,18.7,999cc,5,Sedan
+Volkswagen,Virtus,Highline,1420000,Petrol,Automatic,18.2,999cc,5,Sedan

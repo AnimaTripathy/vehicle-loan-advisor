@@ -1,0 +1,56 @@
+# Backend
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+
+# Data Processing
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Database
+sqlalchemy
+
+# Environment Variables
+python-dotenv
+
+# Validation
+pydantic
+
+# API Calls
+requests
+
+# Notebook
+jupyter
+
+# Testing
+pytest
+
+# Optional (recommended for our project)
+xgboost
+
+langchain-text-splitters
+pypdf
+tiktoken
+
+# LLM & RAG
+openai
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+google-generativeai
+faiss-cpu
+
+langchain-text-splitters
+pypdf
+tiktoken
