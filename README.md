@@ -1,5 +1,13 @@
 # 🚗 Vehicle Loan Advisor
 
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
+![Docker](https://img.shields.io/badge/Docker-Container-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-orange)
+![RAG](https://img.shields.io/badge/RAG-LangChain%20%2B%20FAISS-purple)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+
 ## AI-Powered Loan Eligibility & Vehicle Recommendation System
 
 An end-to-end AI Engineering application that predicts vehicle loan eligibility, calculates the maximum affordable loan amount, recommends vehicles within the approved budget, and provides AI-powered explanations using Retrieval-Augmented Generation (RAG).
@@ -30,7 +38,16 @@ The application performs the following tasks:
 - Demonstrate an end-to-end AI Engineering workflow.
 
 ---
+## 🚀 Live Features
 
+- ✅ Loan Eligibility Prediction
+- ✅ Loan Amount Calculation
+- ✅ Budget-based Vehicle Recommendation
+- ✅ Vehicle Details
+- ✅ AI Recommendation using RAG
+- ✅ Dockerized Deployment
+- ✅ REST APIs using FastAPI
+---
 # ✨ Features
 
 ### 🤖 Loan Eligibility Prediction
@@ -416,3 +433,44 @@ for providing the tools and frameworks that made this project possible.
 This project is intended for educational and portfolio purposes.
 
 ---
+# 📸 Application Screenshots
+
+## 🏠 Home
+
+![Home](Screenshots/home.png)
+
+---
+
+## 📝 Loan Advisor
+
+![Loan Advisor](Screenshots/loan_form.png)
+
+---
+
+## 📊 Loan Prediction
+
+![Prediction](Screenshots/prediction.png)
+
+---
+
+## 🚗 Vehicle Recommendations
+
+![Recommendations](Screenshots/recommendations.png)
+
+---
+
+## 📋 Vehicle Details
+
+![Vehicle Details](Screenshots/vehicle_details.png)
+
+---
+
+## 🤖 AI Recommendation
+
+![AI Recommendation](Screenshots/ai_recommendation.png)
+
+---
+
+## ℹ️ About
+
+![About](Screenshots/about.png)
