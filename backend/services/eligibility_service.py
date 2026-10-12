@@ -17,19 +17,22 @@ class EligibilityService:
 
         applicant_df = pd.DataFrame([applicant_data])
 
-        prediction = self.model.predict(applicant_df)[0]
+        # Predict class
+        prediction_code = self.model.predict(applicant_df)[0]
+
+        # Predict probabilities
+        probability = self.model.predict_proba(applicant_df)[0]
 
         prediction_text = (
             "Approved"
-            if prediction == "Y"
+            if prediction_code == "Y"
             else "Rejected"
         )
-
-        probability = self.model.predict_proba(applicant_df)[0]
 
         confidence = round(max(probability) * 100, 2)
 
         return {
             "prediction": prediction_text,
+            "prediction_code": prediction_code,
             "confidence": confidence
         }

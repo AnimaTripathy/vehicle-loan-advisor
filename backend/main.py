@@ -88,7 +88,10 @@ def loan_advisor(request: LoanAdvisorRequest):
 
     applicant = request.model_dump()
 
-    # Step 1 - Eligibility
+    # -------------------------------------------------
+    # Step 1 - Loan Eligibility Prediction
+    # -------------------------------------------------
+
     prediction = eligibility_service.predict({
         "Gender": applicant["Gender"],
         "Married": applicant["Married"],
@@ -105,11 +108,17 @@ def loan_advisor(request: LoanAdvisorRequest):
 
     if prediction["prediction"] == "Rejected":
         return {
-            "success": True,
-            "prediction": prediction
+            "success": False,
+            "message": "Loan application rejected.",
+            "data": {
+                "prediction": prediction
+            }
         }
 
-    # Step 2 - Loan Amount
+    # -------------------------------------------------
+    # Step 2 - Calculate Maximum Eligible Loan
+    # -------------------------------------------------
+
     loan = LoanAmountService.calculate(
         monthly_income=applicant["ApplicantIncome"],
         existing_emi=applicant["existing_emi"],
@@ -123,20 +132,62 @@ def loan_advisor(request: LoanAdvisorRequest):
             "data": loan
         }
 
-    # Step 3 - Total Budget
-    budget = loan["loan_amount"] + applicant["down_payment"]
+    # -------------------------------------------------
+    # Step 3 - Compare Requested vs Eligible Loan
+    # -------------------------------------------------
 
-    vehicles = vehicle_service.get_recommended_vehicles(budget)
+    requested_loan = applicant["LoanAmount"] * 100000
+    eligible_loan = loan["loan_amount"]
+
+    if requested_loan <= eligible_loan:
+
+        approved_loan = requested_loan
+
+        decision_message = (
+            "Requested loan amount is within the eligible limit."
+        )
+
+    else:
+
+        approved_loan = eligible_loan
+
+        decision_message = (
+            "Requested loan amount exceeds eligibility. "
+            "Maximum eligible loan has been approved."
+        )
+
+    loan["requested_loan"] = requested_loan
+    loan["eligible_loan"] = eligible_loan
+    loan["approved_loan"] = approved_loan
+    loan["decision_message"] = decision_message
+
+    # -------------------------------------------------
+    # Step 4 - Budget Calculation
+    # -------------------------------------------------
+
+    budget = approved_loan + applicant["down_payment"]
+
+    # -------------------------------------------------
+    # Step 5 - Vehicle Recommendation
+    # -------------------------------------------------
+
+    vehicles = vehicle_service.get_recommended_vehicles(
+        budget
+    )
+
+    # -------------------------------------------------
+    # Step 6 - Response
+    # -------------------------------------------------
 
     return {
-    "success": True,
-    "message": "Loan advisor completed successfully.",
-    "data": {
-        "prediction": prediction,
-        "loan": loan,
-        "budget": budget,
-        "recommended_vehicles": vehicles
-    }
+        "success": True,
+        "message": "Loan advisor completed successfully.",
+        "data": {
+            "prediction": prediction,
+            "loan": loan,
+            "budget": budget,
+            "recommended_vehicles": vehicles
+        }
     }
 
 @app.post("/explain")

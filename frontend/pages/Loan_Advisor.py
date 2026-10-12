@@ -265,29 +265,42 @@ if st.session_state.loan_result:
 
     st.subheader("💰 Loan Summary")
 
-    col3, col4 = st.columns(2)
+    col1, col2 = st.columns(2)
 
-    with col3:
+    with col1:
+
+        st.metric(
+            "Requested Loan Amount",
+            f"₹ {loan['requested_loan']:,}"
+        )
+
+        st.metric(
+            "Eligible Loan Amount",
+            f"₹ {loan['eligible_loan']:,}"
+        )
+
+    with col2:
 
         st.metric(
             "Approved Loan Amount",
-            f"₹ {loan['loan_amount']:,}"
+            f"₹ {loan['approved_loan']:,}"
         )
-
-    with col4:
 
         st.metric(
             "Available Budget",
             f"₹ {int(budget):,}"
         )
 
+    st.success(
+        f"📌 Loan Decision: {loan['decision_message']}"
+    )
+
     st.info(
         f"""
-Your estimated purchasing budget is **₹ {int(budget):,}**.
+    Your total purchasing budget is **₹ {int(budget):,}**
 
-The vehicles below are selected because they
-best match your approved budget.
-"""
+    Budget = Approved Loan + Down Payment
+    """
     )
 
     st.divider()
@@ -419,31 +432,52 @@ best match your approved budget.
                             ):
 
                                 question = f"""
-Applicant Result
+                                Applicant Result
 
-Prediction:
-{prediction['prediction']}
+                                Prediction:
+                                {prediction['prediction']}
 
-Confidence:
-{prediction['confidence']}%
+                                Confidence:
+                                {prediction['confidence']}%
 
-Approved Loan Amount:
-₹ {loan['loan_amount']:,}
+                                Requested Loan Amount:
+                                ₹ {loan['requested_loan']:,}
 
-Available Budget:
-₹ {int(budget):,}
+                                Eligible Loan Amount:
+                                ₹ {loan['eligible_loan']:,}
 
-Recommended Vehicle:
-{vehicle['brand']} {vehicle['model']}
+                                Approved Loan Amount:
+                                ₹ {loan['approved_loan']:,}
 
-Variant:
-{vehicle['variant']}
+                                Loan Decision:
+                                {loan['decision_message']}
 
-Vehicle Price:
-₹ {vehicle['price']:,}
+                                Available Budget:
+                                ₹ {int(budget):,}
 
-Explain why this vehicle was recommended using the vehicle loan policy.
-"""
+                                Recommended Vehicle:
+                                {vehicle['brand']} {vehicle['model']}
+
+                                Variant:
+                                {vehicle['variant']}
+
+                                Vehicle Price:
+                                ₹ {vehicle['price']:,}
+
+                                Applicant Context:
+
+                                This applicant has already received a loan decision and a vehicle recommendation.
+
+                                Please explain:
+
+                                1. Why this vehicle fits the approved budget.
+                                2. How the approved loan amount and available budget influenced the recommendation.
+                                3. Which vehicle loan policy rules support this recommendation.
+                                4. Do not mention information that is not present in the policy.
+                                5. If the policy does not specify any next steps, do not invent them.
+
+                                Provide the explanation in clear business language.
+                                """
 
                                 with st.spinner(
                                     "Generating AI recommendation..."
@@ -533,7 +567,9 @@ Explain why this vehicle was recommended using the vehicle loan policy.
 
     with summary_col2:
 
-        st.write(f"**Approved Loan:** ₹ {loan['loan_amount']:,}")
+        st.write(f"**Requested Loan:** ₹ {loan['requested_loan']:,}")
+
+        st.write(f"**Approved Loan:** ₹ {loan['approved_loan']:,}")
 
         st.write(f"**Available Budget:** ₹ {int(budget):,}")
 
